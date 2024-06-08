@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid c1">
+    <div class="row">
+      <div class="col-2">
+        <table width="100%" id="tab">
+          <tr>
+            <td id="menu" onclick="hide()">
+              <img src="img/menu.png" alt="">
+            </td>
+            <td>
+              <img src="img/3357685.webp" alt="" width="100px">
+            </td>
+          </tr>
+        </table>
+        <hr>
+        <div style="margin-top: 50px;">
+          <table id="tabe">
+            <tr>
+              <td><img src="img/home.png" alt=""></td>
+              <td>Home</td>
+            </tr>
+            <tr>
+              <td><img src="img/compass.png" alt=""></td>
+              <td>Explore</td>
+            </tr>
+            <tr>
+              <td><img src="img/library.png" alt=""></td>
+              <td>Library</td>
+            </tr>
+            <tr>
+              <td><img src="img/upgrade.png" alt=""></td>
+              <td>Upgrade</td>
+            </tr>
+          </table>
+          <hr style="margin-top: 80px;">
+          <button type="button" id="playlist"> + Add Playlist</button>
+          <button id="sin">Sing in</button>
+          <div id="porfile">
+            <hr>
+            <table width="100%" id="">
+              <tr>
+                <td>
+                  <img src="img/boy.png" alt="" width="70px" height="70px">
+                </td>
+                <td>kp gurjar</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+      <button type="button" id="show-button" onclick="show()"><img src="img/menu.png" alt=""></button>
+      <div class="col-10">
+        <div class="serach">
+          <table width="100%">
+            <tr>
+              <td>
+                <input type="search" placeholder="search songs" id="user">
+              </td>
+              <td>
+                <button type="button" onclick="mic()">
+                  <img src="img/microphone-black-shape.png" alt="" width="30px">
+                </button>
+              </td>
+              <td>
+                <button type="button" id="btn">
+                  <img src="img/search.png" alt="" width="30px">
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="music">
+          <div class="row">
+            <div class="col-5">
+              <h1>Listen its</h1>
+            </div>
+            <div class="col-7">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="m_img/12414_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="0" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/16133_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="1" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/16454_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="2" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/16562_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="3" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/17764_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="4" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/20355_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="5" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/20452_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="6" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/20462_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="7" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/20474_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="8" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/68818_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="9" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/67546_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="10" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/67546_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="11" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/70390_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="12" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/70608_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="13" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/71156_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="14" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/8326_4.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="15" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/download.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="16" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/download (1).jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="17" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/download (2).jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="18" class="btn">▶</button></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="m_img/images.jpg" width="300px" height="300px" />
+                  <div class="play-button"><button value="19" class="btn">▶</button></div>
+                </div>
+              </div>
+            </div>
+        <div class="video-container">
+          <video src="video.mp4" autoplay muted loop></video>
+        </div>
+        <div style="margin-top: 40px; margin-bottom: 50px;">
+          <h1>Popular Artrise</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb859e4c14fa59296c8649e0e4.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Taylor Swift</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5ebd8b9980db67272cb4d2c3daf.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Billie Eilish</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb437b9e2a82505b3d93ff1022.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Kendrick Lamar</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb4293385d324db8558179afd9.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Drake</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb214f3cf1cbe7139c1e26ffbb.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>The Weeknd</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb19c2790744c792d05570bb71.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Travis Scott</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb4bdb3888818637acb71c4a13.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Mitski</h4>
+              </div>
+              <div class="swiper-slide ss">
+                <img src="artist_img/ab6761610000e5eb6685f03de475c4efb27da3c4.jpg" width="200px" height="200px"
+                  style="border-radius: 100%;" />
+                <h4>Lil Peep</h4>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container-fulid cf4">
+    <div class="row " style="width: 100%; margin-top: 20px; padding-left: 10px;">
+      <div class="col-3">
+        <img src="Screenshot 2024-06-08 164354.png" alt="" width="100%" height="100px" style="border-radius: 100%; margin-top: 0px;" id="song-img">
+        <audio id="song">
+          <source src="songs/We-Don't-Talk-Anymore_320(PaglaSongs).mp3" type="audio/mp3" >
+      </audio>
+      </div>
+      <div class="col-7">
+        <input type="range" value="0" id="progress">
+      </div>
+      <div class="col-1 cs">
+        <img src="icons/shuffle (1).png" alt="">
+      </div>
+      <div class="col-1 cs" onclick=" shuffleMusic()">
+        <img src="icons/shuffle.png" alt="" id="suff">
+      </div>
+    </div>
+    <div class="row rplay" style="width: 100%;">
+      <div class="col-1 cc" onclick="skipBackward()">
+        <img src="icons/previous.png" alt="">
+      </div>
+      <div class="col-1 cc" onclick="playPause()">
+        <img src="icons/play-button.png" alt="" id="icon">
+      </div>
+      <div class="col-1 cc" onclick="skipForward()">
+        <img src="icons/next-button.png" alt="">
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+<script>
+  function hide() {
+    document.querySelectorAll(".col-2").forEach(function (element) {
+
+      element.style.display = "none";
+
+      let show = document.querySelector('#show-button');
+      show.style.display = "block";
+    });
+  }
+  function show() {
+    const elements = document.querySelectorAll(".col-2");
+    elements.forEach(function (element) {
+      element.style.display = "block";
+    });
+    let show = document.querySelector('#show-button');
+    show.style.display = "none";
+  }
+
+</script>
+<script>
+  function mic() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Your browser does not support speech recognition.");
+      return;
+    }
+
+    let recognition = new SpeechRecognition();
+    recognition.interimResults = true;
+
+    recognition.onstart = function () {
+      console.log('Speech recognition started');
+    };
+
+    recognition.onresult = function (event) {
+      var user2 = event.results[0][0].transcript.toLowerCase();
+      console.log('Recognized speech:', user2);
+      document.getElementById('transcript').textContent = user2;
+    };
+
+    recognition.onerror = function (event) {
+      console.error('Speech recognition error detected: ' + event.error);
+      alert('Speech recognition error detected: ' + event.error);
+    };
+
+    recognition.onend = function () {
+      console.log('Speech recognition ended');
+    };
+
+    recognition.start();
+    recognition.onresult = function (event) {
+      var user2 = event.results[0][0].transcript.toLowerCase();
+      console.log('user2');
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+
+    },
+  });
+</script>
+
+</html>
