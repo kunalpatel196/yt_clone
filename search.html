@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid c1" style="height: auto;">
+        <div class="row">
+            <div class="col-2">
+                <table width="100%" id="tab">
+                    <tr>
+                        <td id="menu" onclick="hide()">
+                            <img src="img/menu.png" alt="">
+                        </td>
+                        <td>
+                            <img src="img/3357685.webp" alt="" width="100px">
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <div style="margin-top: 50px;">
+                    <table id="tabe">
+                        <tr>
+                            <td><img src="img/home.png" alt=""></td>
+                            <td><a href="index.html">Home</a></td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/compass.png" alt=""></td>
+                            <td><a href="search.html">Explore</a></td>
+                          </tr>
+                        <tr>
+                            <td><img src="img/library.png" alt=""></td>
+                            <td>Library</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/upgrade.png" alt=""></td>
+                            <td>Upgrade</td>
+                        </tr>
+                    </table>
+                    <hr style="margin-top: 80px;">
+                    <button type="button" id="playlist"> + Add Playlist</button>
+                    <button id="sin">Sing in</button>
+                    <div id="porfile">
+                        <hr>
+                        <table width="100%" id="">
+                            <tr>
+                                <td>
+                                    <img src="img/boy.png" alt="" width="70px" height="70px">
+                                </td>
+                                <td>kp gurjar</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+            <button type="button" id="show-button" onclick="show()"><img src="img/menu.png" alt=""></button>
+            <div class="col-10">
+                <div class="serach">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <input type="search" placeholder="search songs" id="user">
+                            </td>
+                           
+                            <td>
+                                <button type="button" id="btn" onclick="wrie()">
+                                    <img src="img/search.png" alt="" width="30px">
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="songs"></div>
+            </div>
+        </div>
+        <div class="container-fulid cf4">
+            <div class="row " style="width: 100%; margin-top: 20px; padding-left: 10px;">
+                <div class="col-3">
+                    <img src="Screenshot 2024-06-08 164354.png" alt="" width="100%" height="100px"
+                        style="border-radius: 100%; margin-top: 0px;" id="song-img">
+                    <audio id="song">
+                        <source src="songs/We-Don't-Talk-Anymore_320(PaglaSongs).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="col-6">
+                    <input type="range" value="0" id="progress">
+                </div>
+                <div class="col-3 cs">
+                    <img src="icons/medium-volume.png" alt="">
+                    <input type="range" value="100" min="0" max="100" step="0.01" id="volume" onclick="vol()">
+                </div>
+            </div>
+            <div class="row rplay" style="width: 100%;">
+                <div class="col-1 cc" onclick="skipBackward()">
+                    <img src="icons/previous.png" alt="">
+                </div>
+                <div class="col-1 cc" onclick="playPause()">
+                    <img src="icons/play-button.png" alt="" id="icon">
+                </div>
+                <div class="col-1 cc" onclick="skipForward()">
+                    <img src="icons/next-button.png" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+<script src="script.js"></script>
+<script>
+    function hide() {
+      document.querySelectorAll(".col-2").forEach(function (element) {
+  
+        element.style.display = "none";
+  
+        let show = document.querySelector('#show-button');
+        show.style.display = "block";
+      });
+    }
+    function show() {
+      const elements = document.querySelectorAll(".col-2");
+      elements.forEach(function (element) {
+        element.style.display = "block";
+      });
+      let show = document.querySelector('#show-button');
+      show.style.display = "none";
+    }
+  
+  </script>
+</html>

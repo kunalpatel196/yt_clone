@@ -10,6 +10,7 @@ body {
 
     background-color: black;
     color: #fff;
+   
 }
 
 .c1 {
@@ -24,9 +25,28 @@ body {
     height: 1200px;
     padding-top: 100px;
     border-right: 2px dotted gray;
-
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    width: 20%; 
+    z-index: 999;
+    overflow-y: auto; 
 }
 
+/* Main Content Area */
+.col-10 {
+    position: relative;
+    margin-left: 16%;
+    color: #fff;
+    height: 100%; 
+    padding: 20px;
+    overflow-y: auto; 
+    overflow: hidden;
+    height:1100px;
+}
+a{
+    text-decoration: none !important;
+}
 #tab img {
     text-align: center;
     margin-bottom: 20px;
@@ -34,18 +54,21 @@ body {
 
 #tab {
     text-align: center;
+    margin-top: -80px;
 }
 
 #tabe {
     text-align: center;
     width: 100%;
     height: 100%;
+   
 }
 
 #tabe tr td {
     padding-top: 30px;
     font-size: 30px;
     text-align: center;
+    vertical-align:top;
 }
 
 #menu:hover {
@@ -60,8 +83,8 @@ body {
     background-color: black;
     color: #fff;
     width: 5%;
+    height:auto;
     margin-top: 10px;
-    height: 100px;
 }
 
 #show-button:hover {
@@ -87,18 +110,21 @@ body {
     border: none;
     width: 80%;
     height: 45px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 15px;
     background-color: aqua;
+    color: #1c1b1b !important;
 }
-
+#sin:hover{
+    background-color: #ff3929;
+    color: #fff;
+}
 #porfile {
     text-align: center;
     margin-top: 120px;
     font-size: 40px;
-    display: none;
 }
 
 .serach {
@@ -194,7 +220,7 @@ body {
 }
 
 .ss img:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     border: 8px dotted red;
 
 }
@@ -268,7 +294,6 @@ body {
     margin-top: 50px;
     margin: 40px 0;
 }
-
 #progress::-webkit-slider-thumb {
     -webkit-appearance: none;
     background: #f53131;
@@ -295,9 +320,6 @@ body {
     padding-top: 30px;
     transition: 1s;
 }
-
-
-
 .rplay {
     text-align: center;
     padding-left: 800px;
@@ -308,4 +330,46 @@ body {
 
     transform: scale(1.2);
     border-radius: 100%;
+}
+.cs input{
+    border-radius: 4px;
+    cursor: pointer;
+}
+#more{
+    background-color: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display:none;
+}
+#songs{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    text-align: center;
+
+}
+#songs img{
+    width: 100%;height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#song audio::-webkit-media-controls-play-button,
+.gallery-item audio::-webkit-media-controls-current-time-display,
+.gallery-item audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+#song audio {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #f53131;
+    outline: none;
+    margin: 0 8px 16px;
 }
